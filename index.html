@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css"> <!--Be sure to add to your HTML a link to your stylesheet and apply your CSS -->
+        <title>A Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1> <!--1. You should have a page title in an h1 element with an id of title-->
+        <p id="description">Thank you for taking the time to help us improve the platform</p> <!--2. You should have a short explanation in a p element with an id of description-->
+        <form id="survey-form"> <!--3. You should have a form element with an id of survey-form-->
+        <fieldset>
+            <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label> <!--4. Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text-->
+            <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required/></label> <!-- 5.Inside the form element, you are required to enter your email in an input field that has an id of email-->
+            <label id="number-label" for="number">Age  <input id="number" type="number" min="13" max="120" placeholder="Age" /></label> <!--7.Inside the form, you can enter a number in an input field that has an id of number-->
+        </fieldset>
+        <fieldset>Which option best describes your current role?
+            <select id="dropdown"><!-- 12.Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from-->
+                <option value="" disabled>Select an option</option>
+                <option id="1">Challenges</option>
+                <option id="2">Projects</option>
+                <option id="3">Community</option>
+                <option id="4">OpenSource</option>
+            </select>
+        </fieldset>
+        <fieldset> <!-- 13.Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute-->
+                <label for="recommendation"><input value="definitely" type="radio" name="user-choice"/>Definitely </label>
+                <label for="recommendation"><input value="maybe"type="radio" name="user-choice"/>Maybe </label>
+                <label for="recommendation"><input value="not-sure" type="radio" name="user-choice"/>Not sure</label>
+        </fieldset>
+        <fieldset> <!-- 14. Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute-->
+            <label><input value="front-end" type="checkbox"/>Front-end Projects </label>
+            <label><input value="back-end" type="checkbox"/>Back-end Projects </label>
+            <label><input value="data-visualization" type="checkbox"/>Data Visualization </label>
+            <label><input value="challenges" type="checkbox"/>Challenges </label>
+            <label><input value="open-source" type="checkbox"/>Open Source Community </label>
+            <label><input value="gitter" type="checkbox"/>Gitter help rooms </label>
+            <label><input value="videos" type="checkbox"/>Videos </label>
+            <label><input value="city-meetups" type="checkbox"/>City Meetups </label>
+            <label><input value="wiki" type="checkbox"/>Wiki </label>
+            <label><input value="forum" type="checkbox"/>Forum </label>
+            <label><input value="additional-courses" type="checkbox"/>Additional Courses </label>
+        </fieldset>
+        <!--15. Inside the form element, you are presented with a textarea for additional comments-->
+        <textarea rows="3" cols="20" placeholder="Enter your comment here..."></textarea>
+        <button id="submit" type="submit">Sumbit</button> <!--16. Inside the form element, you are presented with a button with id of submit to submit all the inputs-->
+        </form>
+    </body>
+</html>
