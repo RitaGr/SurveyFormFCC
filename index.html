@@ -6,17 +6,19 @@
         <link rel="stylesheet" href="styles.css"> <!--Be sure to add to your HTML a link to your stylesheet and apply your CSS -->
         <title>A Survey Form</title>
     </head>
+
     <body>
         <h1 id="title">freeCodeCamp Survey Form</h1> <!--1. You should have a page title in an h1 element with an id of title-->
         <p id="description">Thank you for taking the time to help us improve the platform</p> <!--2. You should have a short explanation in a p element with an id of description-->
+        <div class="survey-form">
         <form id="survey-form"> <!--3. You should have a form element with an id of survey-form-->
-        <fieldset>
-            <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label> <!--4. Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text-->
-            <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required/></label> <!-- 5.Inside the form element, you are required to enter your email in an input field that has an id of email-->
-            <label id="number-label" for="number">Age  <input id="number" type="number" min="13" max="120" placeholder="Age" /></label> <!--7.Inside the form, you can enter a number in an input field that has an id of number-->
+        <fieldset class="details">
+            <label class="details-label" id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label> <!--4. Inside the form element, you are required to enter your name in an input field that has an id of name and a type of text-->
+            <label class="details-label" id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your Email" required/></label> <!-- 5.Inside the form element, you are required to enter your email in an input field that has an id of email-->
+            <label class="details-label" id="number-label" for="number">Age  <input id="number" type="number" min="13" max="120" placeholder="Age" /></label> <!--7.Inside the form, you can enter a number in an input field that has an id of number-->
         </fieldset>
-        <fieldset>Which option best describes your current role?
-            <select id="dropdown"><!-- 12.Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from-->
+        <fieldset><h2>Which option best describes your current role?</h2>
+            <select class="dropdown" id="dropdown"><!-- 12.Inside the form element, you should have a select dropdown element with an id of dropdown and at least two options to choose from-->
                 <option value="" disabled>Select an option</option>
                 <option id="1">Challenges</option>
                 <option id="2">Projects</option>
@@ -24,12 +26,12 @@
                 <option id="4">OpenSource</option>
             </select>
         </fieldset>
-        <fieldset> <!-- 13.Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute-->
-                <label for="recommendation"><input value="definitely" type="radio" name="user-choice"/>Definitely </label>
-                <label for="recommendation"><input value="maybe"type="radio" name="user-choice"/>Maybe </label>
-                <label for="recommendation"><input value="not-sure" type="radio" name="user-choice"/>Not sure</label>
+        <fieldset><h2>Would you recommend freeCodeCamp to a friend?</h2> <!-- 13.Inside the form element, you can select an option from a group of at least two radio buttons that are grouped using the name attribute-->
+                <label for="recommendation-1"><input id="recommendation-1" value="definitely" type="radio" name="user-choice"/>Definitely </label>
+                <label for="recommendation-2"><input id="recommendation-2" value="maybe"type="radio" name="user-choice"/>Maybe </label>
+                <label for="recommendation-3"><input id="recommendation-3" value="not-sure" type="radio" name="user-choice"/>Not sure</label>
         </fieldset>
-        <fieldset> <!-- 14. Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute-->
+        <fieldset><h2>What would you like to see improved?</h2><!-- 14. Inside the form element, you can select several fields from a series of checkboxes, each of which must have a value attribute-->
             <label><input value="front-end" type="checkbox"/>Front-end Projects </label>
             <label><input value="back-end" type="checkbox"/>Back-end Projects </label>
             <label><input value="data-visualization" type="checkbox"/>Data Visualization </label>
@@ -43,8 +45,10 @@
             <label><input value="additional-courses" type="checkbox"/>Additional Courses </label>
         </fieldset>
         <!--15. Inside the form element, you are presented with a textarea for additional comments-->
+        <h2 class="last">Any comments or suggestions?</h2>
         <textarea rows="3" cols="20" placeholder="Enter your comment here..."></textarea>
-        <button id="submit" type="submit">Sumbit</button> <!--16. Inside the form element, you are presented with a button with id of submit to submit all the inputs-->
+        </div>
+        <input id="submit" type="submit" value="Sumbit" /> <!--16. Inside the form element, you are presented with a button with id of submit to submit all the inputs-->
         </form>
     </body>
 </html>

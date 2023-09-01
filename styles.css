@@ -1,0 +1,110 @@
+body{
+    background-image: url("https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:	#000000;
+    text-align: center;
+    font-family: Tahoma, Verdana, sans-serif;
+    width:100%;
+}
+fieldset{
+    border: none;
+
+}
+h1{
+    color:aliceblue;
+}
+.survey-form{
+    background-color: #ffffffcc;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 30%;
+    min-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+p{
+    color:aliceblue;
+}
+label{
+    display: block;
+
+}
+.details-label{
+    color:#8B4513;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+input[type="submit"]
+{
+    height: 30px;
+    margin-top:30px;
+    margin-bottom:30px;
+    border-color:#ffffffcc;
+    margin-left:auto;
+    margin-right: auto;
+}
+h2{
+    color:#8B4513;
+    font-size: 20px;
+}
+h2, label, select{
+    text-align: left;
+
+}
+input[type="text"],input[type="email"]{
+    width:530px;
+    margin: 20px 0 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+input[type="number"]{
+    width:530px;
+    margin: 20px 10px 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+input, select{
+    width:30%;
+    min-width: 300px;
+    margin: 20px 0px 0 0;
+    
+}
+input,select{
+    margin-right: -100px;
+}
+.last{
+    margin-left:10px;
+}
+.dropdown{
+    margin-left:-110px;
+    font-size: 15px;
+    color:	#000000;
+    width:530px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+textarea {
+    width: 90%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    resize: none;
+}
+::placeholder{
+    color:#000000;
+    font-size: 15px;
+}
